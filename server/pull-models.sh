@@ -33,8 +33,9 @@ TMP="$(mktemp -d)"
 # 临时目录里只有下载文件，逐文件删除比 rm -rf 更安全
 trap 'find "$TMP" -type f -delete 2>/dev/null || true; rmdir "$TMP" 2>/dev/null || true' EXIT
 
-# 多源容灾：api.github.com 是国内服务器相对可达的官方域名、无 CDN 长缓存，优先；
-# raw 次之；jsDelivr 双节点兜底（新仓库未索引时可能 301 回 raw，故排在后面）。
+# 多源容灾（顺序按 2026-11-15 服务器实测耗时排）：
+# raw 最快且无长缓存、无限流 → 主源；api.github.com 官方域名无缓存但有限流 → 第二源；
+# jsDelivr 双节点有 CDN 缓存 → 仅兜底。四个源在服务器上实测均 200。
 fetch_one() {
   local f="$1" ts src u ok
   ts="$(date +%s)"
@@ -43,10 +44,10 @@ fetch_one() {
     urls+=("${MIRROR_BASE%/}/models/${f}?v=${ts}")
   fi
   urls+=(
-    "https://api.github.com/repos/${OWNER}/${REPO}/contents/models/${f}?ref=${BRANCH}"
     "https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/models/${f}?v=${ts}"
-    "https://cdn.jsdelivr.net/gh/${OWNER}/${REPO}@${BRANCH}/models/${f}?v=${ts}"
+    "https://api.github.com/repos/${OWNER}/${REPO}/contents/models/${f}?ref=${BRANCH}"
     "https://fastly.jsdelivr.net/gh/${OWNER}/${REPO}@${BRANCH}/models/${f}?v=${ts}"
+    "https://cdn.jsdelivr.net/gh/${OWNER}/${REPO}@${BRANCH}/models/${f}?v=${ts}"
   )
   for u in "${urls[@]}"; do
     src="$(printf '%s' "$u" | cut -d/ -f3)"
