@@ -33,8 +33,8 @@ TMP="$(mktemp -d)"
 # 临时目录里只有下载文件，逐文件删除比 rm -rf 更安全
 trap 'find "$TMP" -type f -delete 2>/dev/null || true; rmdir "$TMP" 2>/dev/null || true' EXIT
 
-# 多源容灾：raw 无长缓存保证版本新鲜；api.github.com 是国内相对可达的官方域名；
-# jsDelivr 双节点兜底（新仓库未索引时可能 301 回 raw，故排在后面）。
+# 多源容灾：api.github.com 是国内服务器相对可达的官方域名、无 CDN 长缓存，优先；
+# raw 次之；jsDelivr 双节点兜底（新仓库未索引时可能 301 回 raw，故排在后面）。
 fetch_one() {
   local f="$1" ts src u ok
   ts="$(date +%s)"
@@ -43,8 +43,8 @@ fetch_one() {
     urls+=("${MIRROR_BASE%/}/models/${f}?v=${ts}")
   fi
   urls+=(
-    "https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/models/${f}?v=${ts}"
     "https://api.github.com/repos/${OWNER}/${REPO}/contents/models/${f}?ref=${BRANCH}"
+    "https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/models/${f}?v=${ts}"
     "https://cdn.jsdelivr.net/gh/${OWNER}/${REPO}@${BRANCH}/models/${f}?v=${ts}"
     "https://fastly.jsdelivr.net/gh/${OWNER}/${REPO}@${BRANCH}/models/${f}?v=${ts}"
   )
