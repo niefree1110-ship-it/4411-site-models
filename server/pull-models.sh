@@ -4,6 +4,8 @@
 # 设计原则：只覆盖白名单 5 个文件；全部下载 + 校验通过才覆盖；
 #           任何一步失败都保留线上原样并写日志，绝不把半成品推到公网。
 # 可按需用环境变量覆盖：OWNER / REPO / BRANCH / DEST / BACKUP / LOG
+# MIRROR_BASE：可选的自建镜像根地址（其下需有 /models/<file>），优先级最高；
+#              服务器访问 GitHub 不通时用它接自己的代理/CDN，不必改脚本。
 set -Eeuo pipefail
 
 OWNER="${OWNER:-niefree1110-ship-it}"
@@ -28,20 +30,33 @@ rollback() {
 
 mkdir -p "$DEST" "$BACKUP" "$(dirname "$LOG")" || die "目录不可写"
 TMP="$(mktemp -d)"
-trap 'rm -rf "$TMP"' EXIT
+# 临时目录里只有下载文件，逐文件删除比 rm -rf 更安全
+trap 'find "$TMP" -type f -delete 2>/dev/null || true; rmdir "$TMP" 2>/dev/null || true' EXIT
 
-# 主源 raw 无长缓存，保证拿到当天版本；jsDelivr 双节点作备源（国内服务器可达性更好）
+# 多源容灾：raw 无长缓存保证版本新鲜；api.github.com 是国内相对可达的官方域名；
+# jsDelivr 双节点兜底（新仓库未索引时可能 301 回 raw，故排在后面）。
 fetch_one() {
-  local f="$1" ts src
+  local f="$1" ts src u ok
   ts="$(date +%s)"
-  local urls=(
+  local urls=()
+  if [ -n "${MIRROR_BASE:-}" ]; then
+    urls+=("${MIRROR_BASE%/}/models/${f}?v=${ts}")
+  fi
+  urls+=(
     "https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/models/${f}?v=${ts}"
+    "https://api.github.com/repos/${OWNER}/${REPO}/contents/models/${f}?ref=${BRANCH}"
     "https://cdn.jsdelivr.net/gh/${OWNER}/${REPO}@${BRANCH}/models/${f}?v=${ts}"
     "https://fastly.jsdelivr.net/gh/${OWNER}/${REPO}@${BRANCH}/models/${f}?v=${ts}"
   )
   for u in "${urls[@]}"; do
     src="$(printf '%s' "$u" | cut -d/ -f3)"
-    if curl -fsSL --connect-timeout 10 --max-time 60 "$u" -o "${TMP}/${f}" && [ -s "${TMP}/${f}" ]; then
+    if [[ "$u" == *api.github.com* ]]; then
+      # contents 接口默认返回 base64 JSON，加 Accept 才拿到文件原文；匿名 60 次/小时，每天 5 次足够
+      ok="$(curl -fsSL --connect-timeout 10 --max-time 60 -H 'Accept: application/vnd.github.raw' "$u" -o "${TMP}/${f}" && echo 1 || echo 0)"
+    else
+      ok="$(curl -fsSL --connect-timeout 10 --max-time 60 "$u" -o "${TMP}/${f}" && echo 1 || echo 0)"
+    fi
+    if [ "$ok" = "1" ] && [ -s "${TMP}/${f}" ]; then
       log "  下载 OK  ${src} → ${f}  ($(wc -c < "${TMP}/${f}") B)"
       return 0
     fi
@@ -100,7 +115,13 @@ for f in "${FILES[@]}"; do
   [ -s "${DEST}/${f}" ] || { rollback; die "覆盖后文件为空：$f"; }
 done
 
-# 只保留最近 7 份备份
-ls -1dt "${BACKUP}"/20* 2>/dev/null | tail -n +8 | xargs -r rm -rf || true
+# 只保留最近 7 份备份（纯 bash，不依赖 xargs：部分环境的 xargs 有 arg_max 断言崩溃问题）
+mapfile -t olds < <(ls -1dt "${BACKUP}"/20* 2>/dev/null || true)
+if [ "${#olds[@]}" -gt 7 ]; then
+  for d in "${olds[@]:7}"; do
+    find "$d" -type f -delete 2>/dev/null || true
+    rmdir "$d" 2>/dev/null || true
+  done
+fi
 
 log "更新完成 · 快照 ${NEW_STAMP} · 备份 ${BK}"
