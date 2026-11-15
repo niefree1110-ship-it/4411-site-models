@@ -1,0 +1,72 @@
+name: 4411.site 模型工作台 · 每日刷新
+
+# UTC 01:00 = 北京时间 09:00；GitHub Actions 高峰可能延迟数分钟，服务器侧留了 30 分钟余量
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+    inputs:
+      apply_freebies:
+        description: '自动追加 aihot 新增羊毛条目（默认否，人工精编的清单不做无人审核改动）'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-models
+  cancel-in-progress: false
+
+env:
+  # 关键：build.py 用 datetime.now() 生成快照时间戳，必须落在北京时间，
+  # 否则页面会把 UTC 时间当成本地时间，显示得比真实更新更「新」。
+  TZ: Asia/Shanghai
+  APPLY_FREEBIES: ${{ github.event.inputs.apply_freebies || 'false' }}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 检出
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 缓存上游响应；某天抓不到时 build.py 会自动回落前一天的缓存，
+      # 且 GENERATED 时间戳保持不变（不伪装成刚更新）
+      - name: 恢复上游缓存
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: site-cache-${{ github.run_id }}
+          restore-keys: site-cache-
+
+      - name: 抓取并构建
+        run: |
+          set -euo pipefail
+          args=()
+          if [ "${APPLY_FREEBIES}" = "true" ]; then args+=(--apply-freebies); fi
+          python build.py "${args[@]}"
+
+      - name: 产物自检
+        run: python verify.py
+
+      - name: 提交快照
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add models/
+          if git diff --cached --quiet; then
+            echo '本次无数据变化，跳过提交'
+            exit 0
+          fi
+          git commit -m "chore(data): 每日刷新 $(TZ=Asia/Shanghai date '+%F %H:%M')"
+          git push origin HEAD:${{ github.ref_name }}

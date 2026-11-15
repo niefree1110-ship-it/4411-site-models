@@ -1,0 +1,6 @@
+{
+  "_说明": "部署命令留空则只更新本地文件，需要手动上传。填了就会在每次构建后自动执行。",
+  "_示例_scp": "scp -P 22 models/index.html root@你的服务器IP:/www/wwwroot/4411.site/models/index.html",
+  "_示例_rsync": "rsync -avz -e ssh models/index.html root@你的服务器IP:/www/wwwroot/4411.site/models/index.html",
+  "deploy_command": ""
+}

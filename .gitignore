@@ -1,0 +1,12 @@
+# 上游响应快照与调试残留：体积大、每天变，绝不进仓库
+.cache/
+*.bak
+*.log
+__pycache__/
+.DS_Store
+
+# 只在本机看的部署文档 / 旧版交付包 / Windows 计划任务脚本
+auto-deploy/
+DEPLOY.md
+install-task.ps1
+4411-models-upload.zip

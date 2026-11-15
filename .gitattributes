@@ -1,0 +1,3 @@
+# build.py 用 read_text/write_text 读写，天然产出 LF；
+# 统一换行可避免 Windows 本地的 CRLF 与 CI 的 LF 每天制造全文件 diff。
+* text=auto eol=lf
