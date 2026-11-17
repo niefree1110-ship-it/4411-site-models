@@ -1,8 +1,8 @@
 /* 4411.site 模型工作台 · aihot.news 数据快照
    由 build.py 自动生成，请勿手改。下级页面统一引用本文件。 */
 window.AIHOT = {
- "updated": "2026/11/16 10:18:36",
- "verified": "2026-11-15",
+ "updated": "2026/11/17 10:00:18",
+ "verified": "2026-11-17",
  "sources": {
   "leaderboard": "https://aihot.news/leaderboard",
   "resets": "https://aihot.news/resets",
@@ -18,8 +18,8 @@ window.AIHOT = {
    "evals": 39,
    "coverage": 78,
    "cache": 1.33,
-   "input": 53.38,
-   "output": 266.88,
+   "input": 53.33,
+   "output": 266.66,
    "score": 79.9
   },
   {
@@ -31,8 +31,8 @@ window.AIHOT = {
    "evals": 30,
    "coverage": 61,
    "cache": 1.33,
-   "input": 26.69,
-   "output": 133.44,
+   "input": 26.67,
+   "output": 133.33,
    "score": 76.9
   },
   {
@@ -44,8 +44,8 @@ window.AIHOT = {
    "evals": 53,
    "coverage": 100,
    "cache": 1.33,
-   "input": 26.69,
-   "output": 133.44,
+   "input": 26.67,
+   "output": 133.33,
    "score": 74.0
   },
   {
@@ -57,9 +57,9 @@ window.AIHOT = {
    "evals": 20,
    "coverage": 44,
    "cache": 0.5,
-   "input": 10.01,
-   "output": 50.04,
-   "score": 72.5
+   "input": 10.0,
+   "output": 50.0,
+   "score": 72.6
   },
   {
    "slug": "claude-fable-5-1",
@@ -70,8 +70,8 @@ window.AIHOT = {
    "evals": 46,
    "coverage": 92,
    "cache": 1.67,
-   "input": 66.72,
-   "output": 333.59,
+   "input": 66.67,
+   "output": 333.32,
    "score": 72.2
   },
   {
@@ -83,8 +83,8 @@ window.AIHOT = {
    "evals": 53,
    "coverage": 100,
    "cache": 6.67,
-   "input": 66.72,
-   "output": 333.59,
+   "input": 66.67,
+   "output": 333.32,
    "score": 71.5
   },
   {
@@ -96,8 +96,8 @@ window.AIHOT = {
    "evals": 49,
    "coverage": 94,
    "cache": 1.33,
-   "input": 26.69,
-   "output": 133.44,
+   "input": 26.67,
+   "output": 133.33,
    "score": 71.5
   },
   {
@@ -109,8 +109,8 @@ window.AIHOT = {
    "evals": 53,
    "coverage": 100,
    "cache": 0.67,
-   "input": 13.34,
-   "output": 66.72,
+   "input": 13.33,
+   "output": 66.67,
    "score": 71.3
   },
   {
@@ -122,8 +122,8 @@ window.AIHOT = {
    "evals": 53,
    "coverage": 100,
    "cache": 0.67,
-   "input": 13.34,
-   "output": 66.72,
+   "input": 13.33,
+   "output": 66.67,
    "score": 70.1
   },
   {
@@ -136,7 +136,7 @@ window.AIHOT = {
    "coverage": 69,
    "cache": 0.33,
    "input": 6.67,
-   "output": 33.36,
+   "output": 33.33,
    "score": 69.1
   },
   {
@@ -147,9 +147,9 @@ window.AIHOT = {
    "date": "2026-07-24",
    "evals": 43,
    "coverage": 89,
-   "cache": 3.34,
-   "input": 33.36,
-   "output": 166.8,
+   "cache": 3.33,
+   "input": 33.33,
+   "output": 166.66,
    "score": 68.9
   },
   {
@@ -161,8 +161,8 @@ window.AIHOT = {
    "evals": 34,
    "coverage": 78,
    "cache": 6.67,
-   "input": 66.72,
-   "output": 333.59,
+   "input": 66.67,
+   "output": 333.32,
    "score": 68.6
   },
   {
@@ -187,8 +187,8 @@ window.AIHOT = {
    "evals": 41,
    "coverage": 86,
    "cache": 1.33,
-   "input": 26.69,
-   "output": 133.44,
+   "input": 26.67,
+   "output": 133.33,
    "score": 67.3
   },
   {
@@ -199,10 +199,10 @@ window.AIHOT = {
    "date": "2026-07-09",
    "evals": 39,
    "coverage": 83,
-   "cache": 3.34,
-   "input": 33.36,
-   "output": 200.16,
-   "score": 66.7
+   "cache": 3.33,
+   "input": 33.33,
+   "output": 200.0,
+   "score": 66.8
   },
   {
    "slug": "hy-4",
@@ -215,7 +215,7 @@ window.AIHOT = {
    "cache": 0.3,
    "input": 6.0,
    "output": 18.0,
-   "score": 66.5
+   "score": 66.6
   },
   {
    "slug": "muse-ember",
@@ -227,7 +227,7 @@ window.AIHOT = {
    "coverage": 53,
    "cache": 0.0267,
    "input": 0.67,
-   "output": 3.34,
+   "output": 3.33,
    "score": 65.9
   },
   {
@@ -252,8 +252,8 @@ window.AIHOT = {
    "evals": 44,
    "coverage": 92,
    "cache": 1.33,
-   "input": 13.34,
-   "output": 66.72,
+   "input": 13.33,
+   "output": 66.67,
    "score": 65.6
   },
   {
@@ -265,8 +265,8 @@ window.AIHOT = {
    "evals": 39,
    "coverage": 81,
    "cache": 1.0,
-   "input": 8.34,
-   "output": 28.36,
+   "input": 8.33,
+   "output": 28.33,
    "score": 64.2
   },
   {
@@ -278,8 +278,8 @@ window.AIHOT = {
    "evals": 51,
    "coverage": 97,
    "cache": 1.0,
-   "input": 10.01,
-   "output": 50.04,
+   "input": 10.0,
+   "output": 50.0,
    "score": 63.7
   },
   {
@@ -290,10 +290,10 @@ window.AIHOT = {
    "date": "2026-09-21",
    "evals": 53,
    "coverage": 100,
-   "cache": 3.34,
-   "input": 13.34,
-   "output": 40.03,
-   "score": 63.2
+   "cache": 3.33,
+   "input": 13.33,
+   "output": 40.0,
+   "score": 63.5
   },
   {
    "slug": "qwen-3-8-max-0902",
@@ -342,9 +342,9 @@ window.AIHOT = {
    "date": "2026-04-23",
    "evals": 30,
    "coverage": 69,
-   "cache": 3.34,
-   "input": 33.36,
-   "output": 200.16,
+   "cache": 3.33,
+   "input": 33.33,
+   "output": 200.0,
    "score": 62.8
   },
   {
@@ -356,8 +356,8 @@ window.AIHOT = {
    "evals": 34,
    "coverage": 78,
    "cache": 1.0,
-   "input": 10.01,
-   "output": 50.04,
+   "input": 10.0,
+   "output": 50.0,
    "score": 62.7
   },
   {
@@ -407,9 +407,9 @@ window.AIHOT = {
    "date": "2026-08-12",
    "evals": 41,
    "coverage": 86,
-   "cache": 3.34,
-   "input": 13.34,
-   "output": 40.03,
+   "cache": 3.33,
+   "input": 13.33,
+   "output": 40.0,
    "score": 62.2
   },
   {
@@ -420,9 +420,9 @@ window.AIHOT = {
    "date": "2026-05-28",
    "evals": 34,
    "coverage": 75,
-   "cache": 3.34,
-   "input": 33.36,
-   "output": 166.8,
+   "cache": 3.33,
+   "input": 33.33,
+   "output": 166.66,
    "score": 62.2
   },
   {
@@ -448,34 +448,34 @@ window.AIHOT = {
    "coverage": 100,
    "cache": 0.0667,
    "input": 0.67,
-   "output": 3.34,
+   "output": 3.33,
+   "score": 62.0
+  },
+  {
+   "slug": "hy-4-preview",
+   "rank": 35,
+   "name": "Hy 4 Preview",
+   "vendor": "Tencent",
+   "date": "2026-08-28",
+   "evals": 18,
+   "coverage": 44,
+   "cache": 0.3,
+   "input": 6.0,
+   "output": 18.0,
    "score": 62.0
   },
   {
    "slug": "gpt-5-6-terra",
-   "rank": 35,
+   "rank": 36,
    "name": "GPT-5.6 Terra",
    "vendor": "OpenAI",
    "date": "2026-07-09",
    "evals": 38,
    "coverage": 81,
    "cache": 1.33,
-   "input": 13.34,
-   "output": 80.06,
+   "input": 13.33,
+   "output": 80.0,
    "score": 62.0
-  },
-  {
-   "slug": "hy-4-preview",
-   "rank": 36,
-   "name": "Hy 4 Preview",
-   "vendor": "Tencent",
-   "date": "2026-08-28",
-   "evals": 17,
-   "coverage": 44,
-   "cache": 0.3,
-   "input": 6.0,
-   "output": 18.0,
-   "score": 61.7
   },
   {
    "slug": "claude-opus-4-7",
@@ -485,9 +485,9 @@ window.AIHOT = {
    "date": "2026-04-16",
    "evals": 26,
    "coverage": 64,
-   "cache": 3.34,
-   "input": 33.36,
-   "output": 166.8,
+   "cache": 3.33,
+   "input": 33.33,
+   "output": 166.66,
    "score": 60.7
   },
   {
@@ -499,8 +499,8 @@ window.AIHOT = {
    "evals": 28,
    "coverage": 72,
    "cache": 1.0,
-   "input": 8.34,
-   "output": 28.36,
+   "input": 8.33,
+   "output": 28.33,
    "score": 60.5
   },
   {
@@ -564,8 +564,8 @@ window.AIHOT = {
    "evals": 34,
    "coverage": 75,
    "cache": 1.33,
-   "input": 13.34,
-   "output": 66.72,
+   "input": 13.33,
+   "output": 66.67,
    "score": 59.3
   },
   {
@@ -577,26 +577,13 @@ window.AIHOT = {
    "evals": 33,
    "coverage": 78,
    "cache": 2.0,
-   "input": 13.34,
-   "output": 40.03,
-   "score": 58.9
-  },
-  {
-   "slug": "gpt-5-4",
-   "rank": 45,
-   "name": "GPT-5.4",
-   "vendor": "OpenAI",
-   "date": "2026-03-05",
-   "evals": 15,
-   "coverage": 44,
-   "cache": 1.67,
-   "input": 16.68,
-   "output": 100.08,
+   "input": 13.33,
+   "output": 40.0,
    "score": 58.9
   },
   {
    "slug": "mimo-v-2-6-flash",
-   "rank": 46,
+   "rank": 45,
    "name": "MiMo V 2.6 Flash",
    "vendor": "Xiaomi",
    "date": "2026-09-21",
@@ -605,7 +592,20 @@ window.AIHOT = {
    "cache": 0.02,
    "input": 1.0,
    "output": 2.0,
-   "score": 58.9
+   "score": 58.8
+  },
+  {
+   "slug": "gpt-5-4",
+   "rank": 46,
+   "name": "GPT-5.4",
+   "vendor": "OpenAI",
+   "date": "2026-03-05",
+   "evals": 15,
+   "coverage": 44,
+   "cache": 1.67,
+   "input": 16.67,
+   "output": 100.0,
+   "score": 58.8
   },
   {
    "slug": "glm-5-3-flash",
@@ -630,7 +630,7 @@ window.AIHOT = {
    "coverage": 100,
    "cache": 0.0667,
    "input": 0.67,
-   "output": 3.34,
+   "output": 3.33,
    "score": 58.5
   },
   {
@@ -641,9 +641,9 @@ window.AIHOT = {
    "date": "2026-02-05",
    "evals": 20,
    "coverage": 56,
-   "cache": 3.34,
-   "input": 33.36,
-   "output": 166.8,
+   "cache": 3.33,
+   "input": 33.33,
+   "output": 166.66,
    "score": 58.4
   },
   {
@@ -655,8 +655,8 @@ window.AIHOT = {
    "evals": 23,
    "coverage": 61,
    "cache": 1.0,
-   "input": 8.34,
-   "output": 28.36,
+   "input": 8.33,
+   "output": 28.33,
    "score": 58.4
   }
  ],
