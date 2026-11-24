@@ -1,8 +1,8 @@
 /* 4411.site 模型工作台 · aihot.news 数据快照
    由 build.py 自动生成，请勿手改。下级页面统一引用本文件。 */
 window.AIHOT = {
- "updated": "2026/11/23 10:07:03",
- "verified": "2026-11-23",
+ "updated": "2026/11/24 10:06:29",
+ "verified": "2026-11-24",
  "sources": {
   "leaderboard": "https://aihot.news/leaderboard",
   "resets": "https://aihot.news/resets",
@@ -150,7 +150,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 71.2
+   "score": 71.1
   },
   {
    "slug": "claude-opus-5",
@@ -171,12 +171,12 @@ window.AIHOT = {
    "name": "",
    "vendor": "Alibaba",
    "date": "2026-11-16",
-   "evals": 25,
-   "coverage": 56,
+   "evals": 29,
+   "coverage": 62,
    "cache": null,
    "input": null,
    "output": null,
-   "score": 69.4
+   "score": 69.1
   },
   {
    "slug": "claude-fable-5",
@@ -293,7 +293,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 66.0
+   "score": 65.9
   },
   {
    "slug": "gemini-3-8-flash",
@@ -319,7 +319,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 64.1
+   "score": 64.0
   },
   {
    "slug": "muse-spark-1-3",
@@ -371,7 +371,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 63.5
+   "score": 63.4
   },
   {
    "slug": "claude-haiku-5-5",
@@ -384,7 +384,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 63.3
+   "score": 63.2
   },
   {
    "slug": "kimi-k-3",
@@ -579,7 +579,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 60.0
+   "score": 59.9
   },
   {
    "slug": "gpt-6-luna",
@@ -662,9 +662,9 @@ window.AIHOT = {
  ],
  "resets": {
   "stats": {
-   "近 90 天额度重置": "20 次",
+   "近 90 天额度重置": "19 次",
    "近 90 天发重置卡": "10 次",
-   "重置间隔中位数": "2 天",
+   "重置间隔中位数": "2.1 天",
    "上次额度重置": "10月28日"
   },
   "events": [
