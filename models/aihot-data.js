@@ -1,8 +1,8 @@
 /* 4411.site 模型工作台 · aihot.news 数据快照
    由 build.py 自动生成，请勿手改。下级页面统一引用本文件。 */
 window.AIHOT = {
- "updated": "2026/11/25 17:27:54",
- "verified": "2026-11-25",
+ "updated": "2026/11/26 17:06:22",
+ "verified": "2026-11-26",
  "sources": {
   "leaderboard": "https://aihot.news/leaderboard",
   "resets": "https://aihot.news/resets",
@@ -33,7 +33,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 78.1
+   "score": 77.5
   },
   {
    "slug": "gemini-4-carbon",
@@ -46,7 +46,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 77.0
+   "score": 76.9
   },
   {
    "slug": "gpt-6-2-astra",
@@ -59,7 +59,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 75.2
+   "score": 75.0
   },
   {
    "slug": "claude-opus-5-5",
@@ -72,7 +72,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 74.9
+   "score": 74.8
   },
   {
    "slug": "gemini-4-hydrogen",
@@ -98,7 +98,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 73.3
+   "score": 73.0
   },
   {
    "slug": "claude-fable-5-1",
@@ -111,7 +111,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 72.8
+   "score": 72.7
   },
   {
    "slug": "gpt-6-2-sol",
@@ -124,7 +124,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 72.5
+   "score": 72.4
   },
   {
    "slug": "claude-sonnet-5-5",
@@ -163,7 +163,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 71.2
+   "score": 71.1
   },
   {
    "slug": "claude-opus-5",
@@ -176,20 +176,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 70.1
-  },
-  {
-   "slug": "qwen-4-max",
-   "rank": 0,
-   "name": "",
-   "vendor": "Alibaba",
-   "date": "2026-11-16",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 69.1
+   "score": 70.3
   },
   {
    "slug": "claude-fable-5",
@@ -202,7 +189,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 69.1
+   "score": 69.2
   },
   {
    "slug": "gpt-6-1-terra",
@@ -215,7 +202,20 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 68.4
+   "score": 68.8
+  },
+  {
+   "slug": "qwen-4-max",
+   "rank": 0,
+   "name": "",
+   "vendor": "Alibaba",
+   "date": "2026-11-16",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 68.6
   },
   {
    "slug": "muse-wonder",
@@ -228,7 +228,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 68.3
+   "score": 68.1
   },
   {
    "slug": "kimi-k-3-1-pro",
@@ -241,7 +241,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 68.0
+   "score": 67.9
   },
   {
    "slug": "gpt-5-6-sol",
@@ -254,7 +254,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 67.6
+   "score": 67.3
   },
   {
    "slug": "hy-4",
@@ -267,7 +267,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 66.9
+   "score": 66.8
   },
   {
    "slug": "gpt-6-sol",
@@ -280,7 +280,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 66.4
+   "score": 66.3
   },
   {
    "slug": "muse-ember",
@@ -319,6 +319,19 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
+   "score": 64.1
+  },
+  {
+   "slug": "muse-spark-1-3",
+   "rank": 0,
+   "name": "",
+   "vendor": "Meta",
+   "date": "2026-09-02",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
    "score": 64.0
   },
   {
@@ -335,19 +348,6 @@ window.AIHOT = {
    "score": 64.0
   },
   {
-   "slug": "muse-spark-1-3",
-   "rank": 0,
-   "name": "",
-   "vendor": "Meta",
-   "date": "2026-09-02",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 63.9
-  },
-  {
    "slug": "glm-5-3",
    "rank": 0,
    "name": "",
@@ -361,19 +361,6 @@ window.AIHOT = {
    "score": 63.7
   },
   {
-   "slug": "gpt-5-5",
-   "rank": 0,
-   "name": "",
-   "vendor": "OpenAI",
-   "date": "2026-04-23",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 63.6
-  },
-  {
    "slug": "claude-haiku-5-5",
    "rank": 0,
    "name": "",
@@ -384,7 +371,20 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 63.5
+   "score": 63.6
+  },
+  {
+   "slug": "gpt-5-5",
+   "rank": 0,
+   "name": "",
+   "vendor": "OpenAI",
+   "date": "2026-04-23",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 63.3
   },
   {
    "slug": "kimi-k-3",
@@ -397,7 +397,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 63.2
+   "score": 63.3
   },
   {
    "slug": "qwen-3-8-max-0902",
@@ -426,6 +426,19 @@ window.AIHOT = {
    "score": 63.0
   },
   {
+   "slug": "claude-opus-4-8",
+   "rank": 0,
+   "name": "",
+   "vendor": "Anthropic",
+   "date": "2026-05-28",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 62.9
+  },
+  {
    "slug": "gemini-3-7-flash",
    "rank": 0,
    "name": "",
@@ -437,19 +450,6 @@ window.AIHOT = {
    "input": null,
    "output": null,
    "score": 62.8
-  },
-  {
-   "slug": "claude-opus-4-8",
-   "rank": 0,
-   "name": "",
-   "vendor": "Anthropic",
-   "date": "2026-05-28",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 62.6
   },
   {
    "slug": "hy-4-preview",
@@ -475,19 +475,6 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 62.5
-  },
-  {
-   "slug": "gpt-5-6-terra",
-   "rank": 0,
-   "name": "",
-   "vendor": "OpenAI",
-   "date": "2026-07-09",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
    "score": 62.4
   },
   {
@@ -496,6 +483,19 @@ window.AIHOT = {
    "name": "",
    "vendor": "Thinking Machines Lab",
    "date": "2026-11-05",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 62.4
+  },
+  {
+   "slug": "gpt-5-6-terra",
+   "rank": 0,
+   "name": "",
+   "vendor": "OpenAI",
+   "date": "2026-07-09",
    "evals": 0,
    "coverage": 0,
    "cache": null,
@@ -514,7 +514,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 62.1
+   "score": 62.3
   },
   {
    "slug": "qwen-3-8-max",
@@ -527,7 +527,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 62.0
+   "score": 62.2
   },
   {
    "slug": "claude-opus-4-7",
@@ -540,7 +540,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 61.0
+   "score": 60.9
   },
   {
    "slug": "step-5-preview",
@@ -553,7 +553,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 60.8
+   "score": 60.7
   },
   {
    "slug": "minimax-m-3-1-flash",
@@ -582,30 +582,17 @@ window.AIHOT = {
    "score": 59.9
   },
   {
-   "slug": "gpt-6-luna",
+   "slug": "claude-sonnet-5",
    "rank": 0,
    "name": "",
-   "vendor": "OpenAI",
-   "date": "2026-09-22",
+   "vendor": "Anthropic",
+   "date": "2026-06-30",
    "evals": 0,
    "coverage": 0,
    "cache": null,
    "input": null,
    "output": null,
-   "score": 59.6
-  },
-  {
-   "slug": "deepseek-v-4-pro-20260813",
-   "rank": 0,
-   "name": "",
-   "vendor": "DeepSeek",
-   "date": "2026-08-13",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 59.6
+   "score": 59.7
   },
   {
    "slug": "muse-spark-1-2",
@@ -621,17 +608,30 @@ window.AIHOT = {
    "score": 59.5
   },
   {
-   "slug": "claude-sonnet-5",
+   "slug": "deepseek-v-4-pro-20260813",
    "rank": 0,
    "name": "",
-   "vendor": "Anthropic",
-   "date": "2026-06-30",
+   "vendor": "DeepSeek",
+   "date": "2026-08-13",
    "evals": 0,
    "coverage": 0,
    "cache": null,
    "input": null,
    "output": null,
-   "score": 59.4
+   "score": 59.5
+  },
+  {
+   "slug": "gpt-6-luna",
+   "rank": 0,
+   "name": "",
+   "vendor": "OpenAI",
+   "date": "2026-09-22",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 59.5
   },
   {
    "slug": "glm-5-3-flash",
@@ -662,19 +662,12 @@ window.AIHOT = {
  ],
  "resets": {
   "stats": {
-   "近 90 天额度重置": "19 次",
-   "近 90 天发重置卡": "10 次",
-   "重置间隔中位数": "2.1 天",
+   "近 90 天额度重置": "18 次",
+   "近 90 天发重置卡": "12 次",
+   "通常间隔": "2 天",
    "上次额度重置": "10月28日"
   },
   "events": [
-   {
-    "date": "2026-10-26",
-    "types": [
-     "额度重置"
-    ],
-    "url": "https://aihot.news/codex-reset/history/2026-10-26"
-   },
    {
     "date": "2026-10-28",
     "types": [
@@ -697,21 +690,18 @@ window.AIHOT = {
     "url": "https://aihot.news/codex-reset/history/2026-11-02"
    },
    {
-    "date": "2026-11-13",
+    "date": "2026-11-26",
     "types": [
      "发重置卡"
     ],
-    "url": "https://aihot.news/codex-reset/history/2026-11-13"
-   },
-   {
-    "date": "2026-11-25",
-    "types": [
-     "待生效"
-    ],
-    "url": "https://aihot.news/codex-reset/history/2026-11-25"
+    "url": "https://aihot.news/codex-reset/history/2026-11-26"
    }
   ],
   "history": [
+   {
+    "date": "2026-11-26",
+    "url": "https://aihot.news/codex-reset/history/2026-11-26"
+   },
    {
     "date": "2026-11-25",
     "url": "https://aihot.news/codex-reset/history/2026-11-25"
@@ -1119,7 +1109,7 @@ window.AIHOT = {
   ],
   "notice": {
    "title": "等待重置卡到账",
-   "window": "今天 08:30 – 13:30",
+   "window": "以官方公告为准",
    "quote": "",
    "note": "模型推算：原话只说周四；参考以往重置多在太平洋时间傍晚落地。原帖未说明适用范围，卡片余额以 Codex 内显示为准。"
   }
