@@ -1,8 +1,8 @@
 /* 4411.site 模型工作台 · aihot.news 数据快照
    由 build.py 自动生成，请勿手改。下级页面统一引用本文件。 */
 window.AIHOT = {
- "updated": "2026/11/27 17:22:08",
- "verified": "2026-11-27",
+ "updated": "2026/11/28 16:38:03",
+ "verified": "2026-11-28",
  "sources": {
   "leaderboard": "https://aihot.news/leaderboard",
   "resets": "https://aihot.news/resets",
@@ -20,7 +20,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 78.7
+   "score": 78.3
   },
   {
    "slug": "gemini-4-neon",
@@ -33,7 +33,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 77.5
+   "score": 77.3
   },
   {
    "slug": "gemini-4-carbon",
@@ -46,20 +46,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 76.9
-  },
-  {
-   "slug": "gpt-6-2-astra",
-   "rank": 0,
-   "name": "",
-   "vendor": "OpenAI",
-   "date": "2026-11-17",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 74.9
+   "score": 76.6
   },
   {
    "slug": "claude-opus-5-5",
@@ -72,20 +59,20 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 74.6
+   "score": 74.9
   },
   {
-   "slug": "gemini-4-hydrogen",
+   "slug": "gpt-6-2-astra",
    "rank": 0,
    "name": "",
-   "vendor": "Google",
-   "date": "2026-11-12",
+   "vendor": "OpenAI",
+   "date": "2026-11-17",
    "evals": 0,
    "coverage": 0,
    "cache": null,
    "input": null,
    "output": null,
-   "score": 73.4
+   "score": 74.8
   },
   {
    "slug": "gpt-6-astra",
@@ -93,6 +80,19 @@ window.AIHOT = {
    "name": "",
    "vendor": "OpenAI",
    "date": "2026-09-03",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 73.5
+  },
+  {
+   "slug": "gemini-4-hydrogen",
+   "rank": 0,
+   "name": "",
+   "vendor": "Google",
+   "date": "2026-11-12",
    "evals": 0,
    "coverage": 0,
    "cache": null,
@@ -114,6 +114,19 @@ window.AIHOT = {
    "score": 72.7
   },
   {
+   "slug": "gemini-4-argon",
+   "rank": 0,
+   "name": "",
+   "vendor": "Google",
+   "date": "2026-09-30",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 72.5
+  },
+  {
    "slug": "gpt-6-2-sol",
    "rank": 0,
    "name": "",
@@ -124,7 +137,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 72.3
+   "score": 72.2
   },
   {
    "slug": "claude-sonnet-5-5",
@@ -137,20 +150,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 72.1
-  },
-  {
-   "slug": "gemini-4-argon",
-   "rank": 0,
-   "name": "",
-   "vendor": "Google",
-   "date": "2026-09-30",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 71.9
+   "score": 71.7
   },
   {
    "slug": "gpt-6-1-sol",
@@ -163,7 +163,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 71.5
+   "score": 71.7
   },
   {
    "slug": "claude-opus-5",
@@ -176,33 +176,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 70.3
-  },
-  {
-   "slug": "claude-fable-5",
-   "rank": 0,
-   "name": "",
-   "vendor": "Anthropic",
-   "date": "2026-06-09",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 69.2
-  },
-  {
-   "slug": "gpt-6-1-terra",
-   "rank": 0,
-   "name": "",
-   "vendor": "OpenAI",
-   "date": "2026-10-26",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 68.7
+   "score": 70.4
   },
   {
    "slug": "qwen-4-max",
@@ -215,20 +189,33 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 68.6
+   "score": 68.9
   },
   {
-   "slug": "muse-wonder",
+   "slug": "claude-fable-5",
    "rank": 0,
    "name": "",
-   "vendor": "Meta",
-   "date": "2026-10-12",
+   "vendor": "Anthropic",
+   "date": "2026-06-09",
    "evals": 0,
    "coverage": 0,
    "cache": null,
    "input": null,
    "output": null,
-   "score": 68.0
+   "score": 68.8
+  },
+  {
+   "slug": "gpt-6-1-terra",
+   "rank": 0,
+   "name": "",
+   "vendor": "OpenAI",
+   "date": "2026-10-26",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 68.4
   },
   {
    "slug": "kimi-k-3-1-pro",
@@ -244,6 +231,19 @@ window.AIHOT = {
    "score": 67.9
   },
   {
+   "slug": "muse-wonder",
+   "rank": 0,
+   "name": "",
+   "vendor": "Meta",
+   "date": "2026-10-12",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 67.8
+  },
+  {
    "slug": "gpt-5-6-sol",
    "rank": 0,
    "name": "",
@@ -254,7 +254,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 67.2
+   "score": 66.6
   },
   {
    "slug": "hy-4",
@@ -267,7 +267,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 66.8
+   "score": 66.4
   },
   {
    "slug": "gpt-6-sol",
@@ -280,7 +280,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 66.4
+   "score": 66.1
   },
   {
    "slug": "muse-ember",
@@ -293,7 +293,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 66.1
+   "score": 66.0
   },
   {
    "slug": "deepseek-v-4-1-flash-1017",
@@ -306,7 +306,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 66.0
+   "score": 65.3
   },
   {
    "slug": "muse-spark-1-3",
@@ -319,20 +319,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 64.3
-  },
-  {
-   "slug": "gemini-3-8-flash",
-   "rank": 0,
-   "name": "",
-   "vendor": "Google",
-   "date": "2026-09-02",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 64.2
+   "score": 64.7
   },
   {
    "slug": "grok-4-7",
@@ -345,46 +332,20 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
+   "score": 64.1
+  },
+  {
+   "slug": "gemini-3-8-flash",
+   "rank": 0,
+   "name": "",
+   "vendor": "Google",
+   "date": "2026-09-02",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
    "score": 64.0
-  },
-  {
-   "slug": "glm-5-3",
-   "rank": 0,
-   "name": "",
-   "vendor": "Z.ai",
-   "date": "2026-08-18",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 63.7
-  },
-  {
-   "slug": "claude-haiku-5-5",
-   "rank": 0,
-   "name": "",
-   "vendor": "Anthropic",
-   "date": "2026-10-07",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 63.7
-  },
-  {
-   "slug": "claude-opus-4-8",
-   "rank": 0,
-   "name": "",
-   "vendor": "Anthropic",
-   "date": "2026-05-28",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 63.4
   },
   {
    "slug": "kimi-k-3",
@@ -397,20 +358,46 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 63.3
+   "score": 63.8
   },
   {
-   "slug": "gpt-5-5",
+   "slug": "claude-haiku-5-5",
    "rank": 0,
    "name": "",
-   "vendor": "OpenAI",
-   "date": "2026-04-23",
+   "vendor": "Anthropic",
+   "date": "2026-10-07",
    "evals": 0,
    "coverage": 0,
    "cache": null,
    "input": null,
    "output": null,
-   "score": 63.3
+   "score": 63.6
+  },
+  {
+   "slug": "glm-5-3",
+   "rank": 0,
+   "name": "",
+   "vendor": "Z.ai",
+   "date": "2026-08-18",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 63.4
+  },
+  {
+   "slug": "claude-opus-4-8",
+   "rank": 0,
+   "name": "",
+   "vendor": "Anthropic",
+   "date": "2026-05-28",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 63.2
   },
   {
    "slug": "qwen-3-8-max-0902",
@@ -423,33 +410,20 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 63.1
+   "score": 63.0
   },
   {
-   "slug": "gemini-3-7-flash",
-   "rank": 0,
-   "name": "",
-   "vendor": "Google",
-   "date": "2026-08-13",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 62.9
-  },
-  {
-   "slug": "gpt-5-6-terra",
+   "slug": "gpt-5-5",
    "rank": 0,
    "name": "",
    "vendor": "OpenAI",
-   "date": "2026-07-09",
+   "date": "2026-04-23",
    "evals": 0,
    "coverage": 0,
    "cache": null,
    "input": null,
    "output": null,
-   "score": 62.9
+   "score": 62.8
   },
   {
    "slug": "mimo-v-2-6-pro",
@@ -462,46 +436,20 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 62.8
+   "score": 62.7
   },
   {
-   "slug": "hy-4-preview",
+   "slug": "gpt-5-6-terra",
    "rank": 0,
    "name": "",
-   "vendor": "Tencent",
-   "date": "2026-08-28",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 62.6
-  },
-  {
-   "slug": "inkling-2-small",
-   "rank": 0,
-   "name": "",
-   "vendor": "Thinking Machines Lab",
-   "date": "2026-11-05",
+   "vendor": "OpenAI",
+   "date": "2026-07-09",
    "evals": 0,
    "coverage": 0,
    "cache": null,
    "input": null,
    "output": null,
    "score": 62.4
-  },
-  {
-   "slug": "deepseek-v-4-1-flash",
-   "rank": 0,
-   "name": "",
-   "vendor": "DeepSeek",
-   "date": "2026-09-10",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 62.3
   },
   {
    "slug": "grok-4-6",
@@ -514,7 +462,20 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 62.0
+   "score": 62.3
+  },
+  {
+   "slug": "inkling-2-small",
+   "rank": 0,
+   "name": "",
+   "vendor": "Thinking Machines Lab",
+   "date": "2026-11-05",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 62.1
   },
   {
    "slug": "qwen-3-8-max",
@@ -527,7 +488,33 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
+   "score": 62.1
+  },
+  {
+   "slug": "deepseek-v-4-1-flash",
+   "rank": 0,
+   "name": "",
+   "vendor": "DeepSeek",
+   "date": "2026-09-10",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
    "score": 62.0
+  },
+  {
+   "slug": "gemini-3-7-flash",
+   "rank": 0,
+   "name": "",
+   "vendor": "Google",
+   "date": "2026-08-13",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 61.7
   },
   {
    "slug": "step-5-preview",
@@ -540,7 +527,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 60.7
+   "score": 60.9
   },
   {
    "slug": "minimax-m-3-1-flash",
@@ -579,33 +566,7 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 59.9
-  },
-  {
-   "slug": "muse-spark-1-2",
-   "rank": 0,
-   "name": "",
-   "vendor": "Meta",
-   "date": "2026-08-05",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 59.6
-  },
-  {
-   "slug": "gpt-6-luna",
-   "rank": 0,
-   "name": "",
-   "vendor": "OpenAI",
-   "date": "2026-09-22",
-   "evals": 0,
-   "coverage": 0,
-   "cache": null,
-   "input": null,
-   "output": null,
-   "score": 59.5
+   "score": 59.8
   },
   {
    "slug": "mimo-v-2-6-flash",
@@ -618,33 +579,33 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 59.3
+   "score": 59.2
   },
   {
-   "slug": "deepseek-v-4-pro-20260813",
+   "slug": "muse-spark-1-2",
    "rank": 0,
    "name": "",
-   "vendor": "DeepSeek",
-   "date": "2026-08-13",
+   "vendor": "Meta",
+   "date": "2026-08-05",
    "evals": 0,
    "coverage": 0,
    "cache": null,
    "input": null,
    "output": null,
-   "score": 59.3
+   "score": 59.2
   },
   {
-   "slug": "glm-5-3-flash",
+   "slug": "gpt-6-luna",
    "rank": 0,
    "name": "",
-   "vendor": "Z.ai",
-   "date": "2026-08-26",
+   "vendor": "OpenAI",
+   "date": "2026-09-22",
    "evals": 0,
    "coverage": 0,
    "cache": null,
    "input": null,
    "output": null,
-   "score": 59.3
+   "score": 59.1
   },
   {
    "slug": "grok-4-5",
@@ -657,14 +618,53 @@ window.AIHOT = {
    "cache": null,
    "input": null,
    "output": null,
-   "score": 58.6
+   "score": 58.8
+  },
+  {
+   "slug": "deepseek-v-4-pro-20260813",
+   "rank": 0,
+   "name": "",
+   "vendor": "DeepSeek",
+   "date": "2026-08-13",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 58.7
+  },
+  {
+   "slug": "glm-5-3-flash",
+   "rank": 0,
+   "name": "",
+   "vendor": "Z.ai",
+   "date": "2026-08-26",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 58.5
+  },
+  {
+   "slug": "muse-spark-1-1",
+   "rank": 0,
+   "name": "",
+   "vendor": "Meta",
+   "date": "2026-07-09",
+   "evals": 0,
+   "coverage": 0,
+   "cache": null,
+   "input": null,
+   "output": null,
+   "score": 58.2
   }
  ],
  "resets": {
   "stats": {
-   "近 90 天额度重置": "18 次",
+   "近 90 天额度重置": "17 次",
    "近 90 天发重置卡": "12 次",
-   "通常间隔": "2 天",
+   "通常间隔": "2.2 天",
    "上次额度重置": "10月28日"
   },
   "events": [
